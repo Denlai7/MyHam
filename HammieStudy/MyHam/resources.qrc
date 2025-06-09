@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/res">
+        <file>Hamster.png</file>
+        <file>Hamster2.png</file>
+        <file>Ham.png</file>
+        <file>BigHam.png</file>
+    </qresource>
+</RCC>
