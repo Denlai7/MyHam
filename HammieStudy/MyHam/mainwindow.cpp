@@ -44,7 +44,7 @@ MainWindow::MainWindow(QWidget *parent)
     bigHamLabel->setPixmap(bigHamPixmap);
     bigHamLabel->setScaledContents(true);
     bigHamLabel->setFixedSize(100, 100);
-    bigHamLabel->installEventFilter(this); // 🔹 Обробка натискань
+    bigHamLabel->installEventFilter(this); 
 
     hamCountLabel = new QLabel("Ham: 0.0", this);
     hamCountLabel->setStyleSheet("font-size: 20px; color: #772;");
@@ -68,7 +68,6 @@ MainWindow::MainWindow(QWidget *parent)
 
     historyList = new QListWidget(this);
 
-    // DevEdit кнопка
     devButton = new QPushButton("DevEdit", this);
     devButton->hide();
     connect(devButton, &QPushButton::clicked, [=]() {
