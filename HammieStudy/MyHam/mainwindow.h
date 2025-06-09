@@ -13,7 +13,7 @@
 #include <QWidget>
 #include <QPropertyAnimation>
 
-#include "devedit.h" // 🔹 Підключаємо DevEdit
+#include "devedit.h" 
 
 class MainWindow : public QMainWindow
 {
@@ -24,13 +24,13 @@ public:
     ~MainWindow();
 
 protected:
-    bool eventFilter(QObject *obj, QEvent *event) override; // 🔹 Подія
+    bool eventFilter(QObject *obj, QEvent *event) override; 
 
 private slots:
     void updateTime();
     void onStartStopClicked();
     void onResetClicked();
-    void onDevSecondsAdded(int seconds); // 🔹 Новий слот
+    void onDevSecondsAdded(int seconds); 
 
 private:
     QTimer *timer;
@@ -52,7 +52,6 @@ private:
     QPushButton *resetButton;
     QListWidget *historyList;
 
-    // 🔹 Нові поля
     int clickCount;
     QPushButton *devButton;
     DevEdit *devEdit;
@@ -60,5 +59,5 @@ private:
     void addHistoryEntry(const QString &text);
 };
 
-#endif // MAINWINDOW_H
+#endif 
  MAINWINDOW_H
